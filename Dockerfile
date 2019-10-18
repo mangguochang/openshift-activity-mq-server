@@ -21,7 +21,7 @@ RUN gem install asdf
 ADD ./apache-activemq-5.15.9-bin.tar.gz /opt/
 # TODO (optional): Copy the builder files into /opt/app-root
 # COPY ./<builder_folder>/ /opt/app-root/
-
+RUN chmod -R 777 /opt/
 # TODO: Copy the S2I scripts to /usr/libexec/s2i, since openshift/base-centos7 image
 # sets io.openshift.s2i.scripts-url label that way, or update that label
 COPY ./s2i/bin/ /usr/libexec/s2i
