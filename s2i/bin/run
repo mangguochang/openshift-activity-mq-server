@@ -8,4 +8,4 @@
 #
 
 exec asdf -p 8161
-bash -c "/opt/apache-activemq-5.15.9/bin/activemq start &"
+#bash -c "/opt/apache-activemq-5.15.9/bin/activemq start &"

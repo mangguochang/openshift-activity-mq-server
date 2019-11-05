@@ -31,7 +31,7 @@ COPY ./s2i/bin/ /usr/libexec/s2i
 
 # This default user is created in the openshift/base-centos7 image
 USER 1001
-#ENTRYPOINT sh /opt/apache-activemq-5.15.9/bin/activemq start
+ENTRYPOINT sh /opt/apache-activemq-5.15.9/bin/activemq start &
 # TODO: Set the default port for applications built using this image
 EXPOSE 8161
 
